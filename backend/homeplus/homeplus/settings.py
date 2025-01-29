@@ -35,6 +35,13 @@ CORS_ALLOWED_ORIGINS = [
 # Application definition
 
 INSTALLED_APPS = [
+    'services',
+    'bookings',
+    'reviews',
+    'payments',
+    'messaging',
+    'notifications',
+    'categories',
     'rest_framework',
     'rest_framework_simplejwt',
     'corsheaders',

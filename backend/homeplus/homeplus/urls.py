@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from .views import home  # Importa la vista
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('users.urls')),
-    path('', home, name='home'),  # Ruta raíz
+    path('', home, name='home'),
+    path('api/test/', views.test_view, name='test'),  # Ruta raíz
 ]
